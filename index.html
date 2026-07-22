@@ -19,11 +19,14 @@
   <meta name="keywords" content="doom scrolling, shopping simulator, impulse buy, viral products, aesthetic finds, satirical shopping, fake store, ecommerce simulator">
   <meta name="author" content="Domscrool">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://your-vercel-url.vercel.app/" /> <!-- Replace with your actual domain later -->
+  <link rel="canonical" href="https://domscrool.vercel.app/" />
+
+  <!-- Google AdSense Verification Tag -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2943193093838118" crossorigin="anonymous"></script>
 
   <!-- OPEN GRAPH / FACEBOOK / DISCORD -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://your-vercel-url.vercel.app/">
+  <meta property="og:url" content="https://domscrool.vercel.app/">
   <meta property="og:title" content="Domscrool | Infinite Doom Shopping Simulator">
   <meta property="og:description" content="Experience the satirical thrill of 3 AM impulse buying. Doom-scroll viral products and simulate checkout with zero real money spent.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=80">
@@ -95,13 +98,13 @@
     </button>
   </header>
 
-  <!-- MAIN INFINITE FEED -->
+  <!-- MAIN INFINITE FEED (Added min-h-0 fix) -->
   <main id="feedContainer" role="feed" aria-busy="false" class="flex-1 min-h-0 overflow-y-scroll snap-y snap-mandatory no-scrollbar w-full max-w-md mx-auto relative bg-zinc-950 border-x border-zinc-800">
     <!-- Dynamic Product Cards Load Here -->
   </main>
 
   <!-- LIVE SOCIAL PROOF TOAST -->
-  <div id="liveToast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-zinc-900/95 border border-zinc-700 text-white px-4 py-2 rounded-full shadow-2xl z-40 hidden flex items-center gap-2 text-xs backdrop-blur animate-slide-up" role="alert">
+  <div id="liveToast" class="fixed bottom-16 left-1/2 -translate-x-1/2 bg-zinc-900/95 border border-zinc-700 text-white px-4 py-2 rounded-full shadow-2xl z-40 hidden flex items-center gap-2 text-xs backdrop-blur animate-slide-up" role="alert">
     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
     <span id="toastMsg">@BrokeButHappy just added RGB Headphone Stand!</span>
   </div>
@@ -204,9 +207,15 @@
     </div>
   </div>
 
-  <!-- DISCLAIMER -->
-  <footer class="bg-zinc-900 text-[10px] text-zinc-500 text-center py-1 border-t border-zinc-800 z-20">
-    ⚠️ <strong>DISCLAIMER:</strong> Domscrool is a satirical doom-shopping simulator. Products are simulated for fun!
+  <!-- LEGAL FOOTER -->
+  <footer class="bg-zinc-900 text-[10px] text-zinc-500 text-center py-2 border-t border-zinc-800 z-20 flex flex-col items-center gap-1">
+    <p>⚠️ <strong>DISCLAIMER:</strong> Domscrool is a satirical doom-shopping simulator. Products are simulated for fun!</p>
+    <p>© 2026 A free utility provided by your registered freelance video editing enterprise.</p>
+    <div class="flex gap-4 mt-1">
+      <a href="about.html" class="hover:text-zinc-300 transition">About</a>
+      <a href="privacy.html" class="hover:text-zinc-300 transition">Privacy Policy</a>
+      <a href="terms.html" class="hover:text-zinc-300 transition">Terms of Service</a>
+    </div>
   </footer>
 
   <!-- JAVASCRIPT LOGIC -->
@@ -281,27 +290,7 @@
       { name: "Extended Desk Mat XXL", price: 999, origPrice: 1999, img: "https://images.unsplash.com/photo-1541140134513-88a4f137e28f?w=600", desc: "Water-resistant stitched edge gaming desk pad with smooth glide surface." },
       { name: "Magnetic Car Phone Mount", price: 499, origPrice: 999, img: "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600", desc: "Ultra-strong neodymium magnets hold any smartphone securely on rough roads." },
       { name: "Wearable Neck Fan", price: 1299, origPrice: 2499, img: "https://images.unsplash.com/photo-1591147139225-856bb2a7e262?w=600", desc: "Bladeless hands-free cooling fan with 3 speed settings and long battery life." },
-      { name: "Smart RGB Ambient Light Strip", price: 699, origPrice: 1399, img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600", desc: "App-controlled Wi-Fi LED light strip with voice assistant support." },
-      { name: "LED Facial Light Therapy Mask", price: 2499, origPrice: 5999, img: "https://loremflickr.com/600/800/skincare,mask", desc: "Professional-grade LED mask with 7 color settings for acne reduction, collagen boosting, and glowing skin." },
-      { name: "Rose Quartz Gua Sha & Roller Set", price: 899, origPrice: 1599, img: "https://loremflickr.com/600/800/guasha,roller", desc: "De-puff and sculpt your face naturally with this authentic, cooling rose quartz beauty tool kit." },
-      { name: "Heated Eyelash Curler", price: 599, origPrice: 1299, img: "https://loremflickr.com/600/800/makeup,lashes", desc: "Get lifted, long-lasting curls safely with this rechargeable, temperature-controlled lash curler." },
-      { name: "Mini Skincare & Makeup Fridge", price: 3999, origPrice: 6999, img: "https://loremflickr.com/600/800/minifridge,aesthetic", desc: "Keep your serums, masks, and face rollers chilled to perfection in this adorable desktop fridge." },
-      { name: "Aesthetic Canvas Tote Bag", price: 499, origPrice: 999, img: "https://loremflickr.com/600/800/totebag,fashion", desc: "Heavy-duty cotton canvas tote with minimalist line-art designs. Perfect for grocery runs or coffee shop dates." },
-      { name: "Y2K Oversized Rectangular Sunglasses", price: 349, origPrice: 899, img: "https://loremflickr.com/600/800/sunglasses,y2k", desc: "Vintage-inspired chunky rectangular frames to complete your off-duty model street style." },
-      { name: "Matte Pastel Claw Clip Set (4-Pack)", price: 299, origPrice: 699, img: "https://loremflickr.com/600/800/hairclip,pastel", desc: "Large, non-slip matte hair clips designed to hold thick hair securely without pulling." },
-      { name: "Chunky 18K Gold Plated Hoops", price: 799, origPrice: 1499, img: "https://loremflickr.com/600/800/jewelry,earrings", desc: "Lightweight, tarnish-resistant gold hoop earrings that instantly elevate any everyday outfit." },
-      { name: "Pastel Ceramic Coffee Mug & Saucer", price: 599, origPrice: 1199, img: "https://loremflickr.com/600/800/ceramic,mug", desc: "Chunky, hand-crafted style ceramic mug with a cloud-like matching saucer plate." },
-      { name: "Essential Oil Flame Diffuser", price: 1499, origPrice: 2999, img: "https://loremflickr.com/600/800/diffuser,home", desc: "Ultrasonic humidifier that creates a realistic, safe flickering flame effect using water mist and LED lights." },
-      { name: "Ultra-Soft Cloud Slippers", price: 699, origPrice: 1299, img: "https://loremflickr.com/600/800/slippers,comfy", desc: "Like walking on marshmallows. Ergonomic EVA foam platform slippers for extreme indoor comfort." },
-      { name: "Strawberry Lip Sleeping Mask", price: 449, origPrice: 899, img: "https://loremflickr.com/600/800/lipmask,beauty", desc: "Intensely hydrating overnight lip treatment for soft, plump lips by morning." },
-      { name: "Silk Sleep Eye Mask", price: 399, origPrice: 799, img: "https://loremflickr.com/600/800/sleepmask,silk", desc: "100% pure mulberry silk mask to block out light and protect the delicate skin around your eyes." },
-      { name: "Heatless Silk Hair Curler Set", price: 499, origPrice: 999, img: "https://loremflickr.com/600/800/hair,silk", desc: "Get perfect bouncy blow-out curls overnight with absolutely zero heat damage." },
-      { name: "Fluffy Spa Makeup Headband", price: 199, origPrice: 499, img: "https://loremflickr.com/600/800/headband,spa", desc: "Super soft micro-fleece headband to keep hair dry and out of the way during your skincare routine." },
-      { name: "Heart-Shaped Lighted Vanity Mirror", price: 1899, origPrice: 3499, img: "https://loremflickr.com/600/800/vanity,mirror", desc: "Dimmable LED touch mirror with adjustable angles, perfect for flawless makeup application." },
-      { name: "Ribbed Seamless Lounge Set", price: 1499, origPrice: 2999, img: "https://loremflickr.com/600/800/loungewear,fashion", desc: "Buttery soft, stretchy two-piece ribbed set. So comfortable you'll want to live in it." },
-      { name: "Aesthetic Acrylic Desk Organizer", price: 699, origPrice: 1299, img: "https://loremflickr.com/600/800/organizer,acrylic", desc: "Clear, minimalist multi-compartment storage for makeup brushes, stationery, and knick-knacks." },
-      { name: "Crystal Water Drop Desk Lamp", price: 1199, origPrice: 2499, img: "https://loremflickr.com/600/800/lamp,crystal", desc: "Touch-activated acrylic lamp that casts stunning, moving water-ripple light patterns across your walls." },
-      { name: "Fairy Light Photo Clip String", price: 349, origPrice: 799, img: "https://loremflickr.com/600/800/fairylights,room", desc: "Warm white LED string lights with transparent clips to hang your favorite polaroids and memories." }
+      { name: "Smart RGB Ambient Light Strip", price: 699, origPrice: 1399, img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600", desc: "App-controlled Wi-Fi LED light strip with voice assistant support." }
     ];
 
     let generatedProducts = [];
@@ -345,7 +334,10 @@
     function appendProductToDOM(p) {
       const feed = document.getElementById('feedContainer');
       const card = document.createElement('article');
-      card.className = "snap-start w-full h-full min-h-[calc(100vh-80px)] flex flex-col justify-end p-5 relative border-b border-zinc-900";
+      
+      // FIX APPLIED HERE: Replaced min-h-[calc(...)] with min-h-full flex-shrink-0
+      card.className = "snap-start w-full min-h-full flex-shrink-0 flex flex-col justify-end p-5 relative border-b border-zinc-900";
+      
       card.style.backgroundImage = `linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.1)), url('${p.img}')`;
       card.style.backgroundSize = 'cover';
       card.style.backgroundPosition = 'center';
@@ -440,7 +432,7 @@
 
       const detailImg = document.getElementById('detailImg');
       detailImg.src = p.img;
-      detailImg.alt = `Image of ${p.name}`; // Accessibility fix for SEO
+      detailImg.alt = `Image of ${p.name}`;
       
       document.getElementById('detailTitle').innerText = p.name;
       document.getElementById('detailTag').innerText = p.tag;
